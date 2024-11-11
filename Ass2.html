@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramak Exercices </title>
+
+    <style>
+         body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      margin: 0;
+    }
+    /* Remove default styling */
+ ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  top: 0;
+  position: sticky ;
+}
+
+/* Basic nav styling */
+.nav-links {
+  display: flex; /* Align items horizontally */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for nav */
+  padding: 30px;
+  justify-content: center; /* Center-align the nav */
+}
+
+.nav-links li {
+  margin: 0 30px; /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link text color */
+  font-weight: bold;
+  padding: 10px 20px; /* Padding for better click area */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.nav-links a:hover {
+  background-color:black; /* Background on hover */
+  color:chocolate
+}
+
+        h1 { 
+            color: chocolate;
+            text-align: left;
+            margin: 100px;
+        }
+
+        h2{
+            color: blue;
+            text-decoration: underline;
+            text-decoration-color:slateblue ;
+            text-align: center;
+           
+            
+        }
+        #fiel1{
+            margin: 3px ;
+            padding: 50px;
+            border-radius: 40px;
+            height: 500px; 
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        #fiel2{
+            margin: 3px ;
+            padding: 50px;
+            border-radius: 40px;
+            height: 200px; 
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        #fiel3{
+            margin: 3px ;
+            padding: 50px;
+            border-radius: 40px;
+            height: 200px; 
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        #div1{
+            border: 50%;
+        }
+        #save{
+            border-style: dashed;
+            border-radius: 20px;
+            background-color: purple;
+            text-align: center;
+            color: white;
+            height: 40px;
+            width: 80px;
+            margin: 10px;
+            transition: 0.2s;
+
+
+        }
+        #save:hover{
+            background-color: white;
+            color: purple;
+
+        }
+        #rest{border-style: dashed;
+            border-radius: 20px;
+            background-color: purple;
+            text-align: center;
+            color: white;
+            height: 40px;
+            width: 80px;
+            margin: 0px;
+            transition: 0.2s;
+
+        }
+        #rest:hover{
+            background-color: white;
+            color: purple;
+
+
+        }
+        input[type="range"] {
+  width: 300px;
+  accent-color:blue; /* Color of the slider thumb */
+}
+        input[type="range"] {
+  width: 160px;
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+  outline: blue;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+  border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid #ff416c;
+  border-radius: 30%;
+}
+
+
+            
+        
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Exercice 1 </a></li>
+          <li><a href="Ass2.html">Exercice 2</a></li>
+          <li><a href="Ass3.html">Exercice 3</a></li>
+          <li><a href="Untitled-1.html">Exercice 4 </a></li>
+        </ul>
+      </nav>
+
+    <section><div id="div1">
+        <h1> <u> Assignment 2 Session 3</u></h1>
+        <br>
+        <br>
+        <h2> Feed Back</h2>
+
+        <fieldset id="fiel1">
+            <legend>Info  </legend>
+            <div>
+                <h3>User Name </h3>
+                <input type="text" placeholder="User Name ">
+            </div>
+            <div>
+                <h3>Password </h3>
+                <input type="password" placeholder="Enter password ">
+
+            </div>
+            <div>
+            <h3>Date of birth</h3>
+            <input type="date" > </div>
+
+            <div>
+                <h3>Email</h3>
+                <input type="email" placeholder="enter your email">  
+
+            </div> <br>
+            <div>
+                <label>Number Of visite per month :</label>  <input type="number" min="0" max="31" value="15"> <br>
+                
+            </div>
+            <div>
+            
+                Man <input type="radio"> <br>
+                Woman <input type="radio"> </div>
+            
+            <div>
+                <h3>Branch</h3>
+                <select >
+                    <optgroup label="Real Madrid">
+                        <option>Mbappe</option>
+                        <option>Vini Jr </option>
+                        <option>Rodrigo</option>
+    
+                    </optgroup>
+                   
+                    <optgroup label="Barcelona">
+                        <option > Lamine Yamale </option>
+                        <option>Pedri </option>
+                        <option>Gavi</option>
+                    </optgroup> 
+                       
+                    
+                   
+                   
+                </select>
+            </div>
+
+        </fieldset>
+        <fieldset id="fiel2">
+            <legend>Favorite Time </legend>
+            <div>
+                <label>Breakfast </label>
+                <input type="checkbox"> <br> <br>
+                <label>Dinner </label>
+                <input type="checkbox"> <br> <br>
+                <label>Lunch </label>
+                <input type="checkbox"> <br>
+            </div>
+            <div>
+                <label > your rating : </label>
+                <input type="range"  min="1" max="100 " value="50 ">
+            </div>
+        </fieldset> 
+        <fieldset id="fiel3">
+            <legend>Write About Your experience</legend>
+            <div>
+                <label>A few Words </label>
+                <textarea rows="5" cols="5" maxlength="50"></textarea>
+
+            </div>
+            <div> <input type="submit" value="Save" id="save">
+            <input type="reset" value="Delete " id="rest"></div>
+        </fieldset>
+
+
+     </div></section>
+
+
+    
+</body>
+</html>

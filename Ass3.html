@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+    }
+    ul {
+margin: 20px;
+padding: 10px;
+}
+
+ul {
+list-style-type: none; 
+}
+
+
+.nav-links {
+display: flex;
+background-color: rgba(0, 0, 0, 0.7); 
+padding: 20px;
+justify-content: right; 
+}
+
+.nav-links li {
+margin: 0 30px; 
+}
+
+.nav-links a {
+text-decoration: none; 
+color: white; 
+font-weight: bold;
+padding: 10px 20px; 
+border-radius: 4px; 
+}
+
+.nav-links a:hover {
+background-color:black; 
+color:chocolate
+}
+
+    .header {
+      display: flex;
+      background-color: green;
+      color: white;
+    }
+
+    .logo {
+      background-color: red;
+      width: 20%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .heading {
+      background-color: green;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+   
+    .menu {
+      background-color: yellow;
+      text-align: center;
+      padding: 40px;
+      color: black;
+      font-weight: bold;
+    }
+
+    
+    .sections {
+      display: flex;
+    }
+
+    .section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      height: 100px;
+      color: white;
+    }
+
+    .section1 { background-color: blue; }
+    .section2 { background-color: gray; }
+    .section3 { background-color: pink; color: black; }
+
+   
+    .main {
+      display: flex;
+      
+    }
+
+    .content {
+      background-color: cyan;
+      flex: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      height: 300px;
+    }
+
+    .sidebar {
+      background-color: olive;
+      color: white;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      height: 300px;
+    }
+
+    .footer {
+      background-color: lightblue;
+      text-align: center;
+      padding: 50px;
+      font-weight: bold;
+    }
+    .nav-links{
+    flex:1 ;
+    text-align: right;
+}
+
+.nav-links ul li { /*hay kermel al space bayn al items ou ysiro 7ad ba3ed */
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{/* this is after the animation (home content )*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+  </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Exercice 1 </a></li>
+          <li><a href="Ass2.html">Exercice 2</a></li>
+          <li><a href="Ass3.html">Exercice 3</a></li>
+          <li><a href="Untitled-1.html">Exercice 4 </a></li>
+        </ul>
+      </nav>
+    
+
+
+    <br><br><br>
+<h1><u>Assignment last Exercice</u></h1>
+<br>
+       
+
+<div class="container">
+  
+  <div class="header">
+    <div class="logo">LOGO</div>
+    <div class="heading">Website Heading</div>
+  </div>
+
+  
+  <div class="menu">MENU</div>
+
+ 
+  <div class="sections">
+    <div class="section section1">SECTION 1</div>
+    <div class="section section2">SECTION 2</div>
+    <div class="section section3">SECTION 3</div>
+  </div>
+
+ 
+  <div class="main">
+    <div class="content">PAGE CONTENTS</div>
+    <div class="sidebar">SIDE BAR</div>
+  </div>
+
+ 
+  <div class="footer">PAGE FOOTER</div>
+</div>
+
+
+</body>
+</html>
